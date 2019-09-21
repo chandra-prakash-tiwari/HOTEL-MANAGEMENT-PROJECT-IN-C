@@ -61,7 +61,7 @@ The major feature of this program is:
 
 3. Book Any room which is present in hotel and if room is vacant and enter all correct information of the customer.
 
-4. Search Perticular room customer record.
+4. Search record of Particular room  .
 
 5. Edit Customer record.
 

@@ -652,24 +652,21 @@ void LIST()
 
 void DELETE1(char a[5])
 {
-	FILE *f,*t,*r;
+	FILE *f,*t;
 	char roomnumber[5];
 	if((t=fopen("temp.txt","w"))==NULL)
 	exit(0);
 	if((f=fopen("FILE.txt","rb"))==NULL)
-	exit(0);
-	if((r=fopen("RECORD.txt","ab+"))==NULL)
 	exit(0);
 	fflush(stdin);
 	strcpy(roomnumber,a);
 	while(fread(&s,sizeof(s),1,f)==1)
 	{
 		if(strcmp(s.roomnumber,roomnumber)==0)
-			fwrite(&s,sizeof(s),1,r);
+			continue;
 		else
 			fwrite(&s,sizeof(s),1,t);
 	}
-	fclose(r);
 	fclose(t);
 	fclose(r);
 	remove("FILE.txt");

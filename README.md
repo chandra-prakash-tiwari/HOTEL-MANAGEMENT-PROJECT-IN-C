@@ -53,7 +53,7 @@ Download and Compile .c file and run exe file
 
 ## Description
 
-The major feature of this program is:
+The major features of this program (HOTEL MANAGEMENT SYSTEM) is:
 
 1. Login the administrator through username and password if both are valid then gone to main menu.
 
